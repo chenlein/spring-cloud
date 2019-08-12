@@ -1,0 +1,11 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /
+zuul:
+  routes:
+    app:
+      path: /app/**
+      sensitiveHeaders:
+      serviceId: app01
+  add-host-header: true
